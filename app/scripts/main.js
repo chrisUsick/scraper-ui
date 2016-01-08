@@ -3,6 +3,7 @@ var ractive = new Ractive({
   template: $('#app-template').html(),
   data:{title:'hello world'}
 })
+var iframe = $('#iframe')[0]
 
 ractive.observe('scraper.root', function (newVal, old, path){
   // console.log(newVal);
